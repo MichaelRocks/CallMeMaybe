@@ -58,8 +58,8 @@ publishing {
     project.tasks.create("bintrayUpload${variant.name.capitalize()}", BintrayUploadTask) {
       apiUrl = BintrayUploadTask.API_URL_DEFAULT
 
-      user = project.property('bintrayUser')
-      apiKey = project.property('bintrayKey')
+      user = project.findProperty('bintrayUser')
+      apiKey = project.findProperty('bintrayKey')
       publications = [variant.name.capitalize()]
 
       repoName = 'maven'
