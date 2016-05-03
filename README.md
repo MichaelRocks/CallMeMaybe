@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MichaelRocks/callme.svg?branch=master)](https://travis-ci.org/MichaelRocks/callme)
+
 CallMe
 ======
 An Android `EditText` for phone numbers.
