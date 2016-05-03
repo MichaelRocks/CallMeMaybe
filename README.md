@@ -19,6 +19,13 @@ Usage
 -----
 Just replace your `EditText` with the `PhoneEditText` and that's it!
 
+If using the `PhoneEditText` view doesn't work wll for you it's possible
+to make `TextView` act as the `PhoneEditText`.
+```java
+final TextView phoneEditText = (TextView) findViewById(R.id.phoneEditText);
+CallMe.applyTo(phoneEditText);
+```
+
 License
 =======
     Copyright 2016 Michael Rozumyanskiy
