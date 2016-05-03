@@ -16,12 +16,11 @@
 
 package io.michaelrocks.callme.sample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import io.michaelrocks.callme.CallMe;
-import io.michaelrocks.callme.sample.R;
 
 public class MainActivity extends AppCompatActivity {
   @Override
