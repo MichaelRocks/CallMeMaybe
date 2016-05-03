@@ -1,15 +1,10 @@
 language: android
 
-before_install:
-  - echo yes | android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null
-
-install:
-  - true
-
 android:
   components:
-    - build-tools-23.0.0
+    - build-tools-23.0.3
     - android-23
+    - extra-android-m2repository
 
 jdk:
   - oraclejdk7
