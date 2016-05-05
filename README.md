@@ -25,7 +25,7 @@ If using the `PhoneEditText` view doesn't work wll for you it's possible
 to make `TextView` act as the `PhoneEditText`.
 ```java
 final TextView phoneEditText = (TextView) findViewById(R.id.phoneEditText);
-CallMe.applyTo(phoneEditText);
+CallMe.attachTo(phoneEditText);
 ```
 
 License
