@@ -27,8 +27,8 @@ class PhoneStringBuilder extends SpannableStringBuilder {
   }
 
   public PhoneStringBuilder(final CharSequence text, final PhoneFormatter phoneFormatter) {
-    super(text);
     this.phoneFormatter = phoneFormatter;
+    replace(0, length(), text);
   }
 
   @Override
