@@ -43,6 +43,7 @@
   <io.michaelrocks.callme.PhoneEditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="@string/another_phone_hint" />
+    android:hint="@string/another_phone_hint"
+    android:text="18005550199" />
 
 </LinearLayout>
