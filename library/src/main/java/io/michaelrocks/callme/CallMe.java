@@ -25,7 +25,7 @@ public class CallMe {
     // Nothing to do.
   }
 
-  public static void applyTo(final TextView textView) {
+  public static void attachTo(final TextView textView) {
     textView.setInputType(EditorInfo.TYPE_CLASS_PHONE);
     textView.setEditableFactory(new Editable.Factory() {
       @Override

@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.main_activity);
 
     final TextView phoneEditText = (TextView) findViewById(R.id.phoneEditText);
-    CallMe.applyTo(phoneEditText);
+    CallMe.attachTo(phoneEditText);
   }
 }

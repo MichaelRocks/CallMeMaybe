@@ -41,6 +41,6 @@ public class PhoneEditText extends EditText {
   }
 
   {
-    CallMe.applyTo(this);
+    CallMe.attachTo(this);
   }
 }
