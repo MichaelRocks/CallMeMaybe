@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-  compile 'io.michaelrocks:callme:1.0.0'
+  compile 'io.michaelrocks:callme:1.1.0'
 }
 ```
 
