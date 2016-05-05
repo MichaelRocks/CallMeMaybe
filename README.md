@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/MichaelRocks/callme.svg?branch=master)](https://travis-ci.org/MichaelRocks/callme)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CallMe-green.svg?style=true)](https://android-arsenal.com/details/1/3542)
 
 CallMe
 ======
