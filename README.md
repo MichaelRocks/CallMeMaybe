@@ -5,6 +5,8 @@ CallMe
 ======
 An Android `EditText` for phone numbers.
 
+![CallMe](https://raw.githubusercontent.com/MichaelRocks/callme/master/callme.gif)
+
 Download
 --------
 Gradle:
