@@ -39,12 +39,16 @@ public class CallMeMaybe {
   }
 
   public static void attachTo(final TextView textView) {
+    attachTo(textView, FormatParameters.DEFAULT);
+  }
+
+  public static void attachTo(final TextView textView, final FormatParameters parameters) {
     ensurePhoneNumberUtil(textView.getContext());
     textView.setInputType(EditorInfo.TYPE_CLASS_PHONE);
     textView.setEditableFactory(new Editable.Factory() {
       @Override
       public Editable newEditable(final CharSequence source) {
-        return new PhoneStringBuilder(phoneNumberUtil, source);
+        return new PhoneStringBuilder(phoneNumberUtil, source, parameters);
       }
     });
   }

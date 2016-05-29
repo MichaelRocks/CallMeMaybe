@@ -24,11 +24,12 @@ import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 class PhoneStringBuilder extends SpannableStringBuilder {
   private final PhoneFormatter phoneFormatter;
 
-  public PhoneStringBuilder(final PhoneNumberUtil phoneNumberUtil, final CharSequence source) {
-    this(source, new PhoneFormatter(phoneNumberUtil));
+  public PhoneStringBuilder(final PhoneNumberUtil phoneNumberUtil, final CharSequence source,
+      final FormatParameters parameters) {
+    this(source, new PhoneFormatter(phoneNumberUtil, parameters));
   }
 
-  public PhoneStringBuilder(final CharSequence text, final PhoneFormatter phoneFormatter) {
+  PhoneStringBuilder(final CharSequence text, final PhoneFormatter phoneFormatter) {
     this.phoneFormatter = phoneFormatter;
     replace(0, length(), text);
   }

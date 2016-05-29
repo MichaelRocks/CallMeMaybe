@@ -25,14 +25,19 @@ import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 
 class PhoneFormatter {
   private final SpannableStringBuilder buffer = new SpannableStringBuilder();
-  private final AsYouTypeFormatter asYouTypeFormatter;
+  private final MutableAsYouTypeFormatter asYouTypeFormatter;
 
   public PhoneFormatter(final PhoneNumberUtil phoneNumberUtil) {
-    this(new AsYouTypeFormatter(phoneNumberUtil));
+    this(new MutableAsYouTypeFormatter(phoneNumberUtil), FormatParameters.DEFAULT);
   }
 
-  public PhoneFormatter(final AsYouTypeFormatter asYouTypeFormatter) {
+  public PhoneFormatter(final PhoneNumberUtil phoneNumberUtil, final FormatParameters parameters) {
+    this(new MutableAsYouTypeFormatter(phoneNumberUtil), parameters);
+  }
+
+  PhoneFormatter(final MutableAsYouTypeFormatter asYouTypeFormatter, final FormatParameters parameters) {
     this.asYouTypeFormatter = asYouTypeFormatter;
+    asYouTypeFormatter.setRegion(parameters.getRegion());
   }
 
   public CharSequence getFormattedPhone() {
@@ -67,7 +72,7 @@ class PhoneFormatter {
     boolean selectionPositionRemembered = false;
 
     asYouTypeFormatter.clear();
-    String phoneNumberText = asYouTypeFormatter.inputDigit('+');
+    String phoneNumberText = "";
 
     int offset = 0;
     final int length = input.length();
