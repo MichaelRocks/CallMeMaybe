@@ -67,7 +67,7 @@ publishing {
       publications = [variant.name.capitalize()]
 
       repoName = 'maven'
-      packageName = artifactName
+      packageName = 'CallMeMaybe'
 
       versionName = project.version
       versionReleased = new Date()
