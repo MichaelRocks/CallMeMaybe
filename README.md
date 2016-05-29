@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/MichaelRocks/callmemaybe.svg?branch=master)](https://travis-ci.org/MichaelRocks/callmemaybe)
+[![Build Status](https://travis-ci.org/MichaelRocks/CallMeMaybe.svg?branch=master)](https://travis-ci.org/MichaelRocks/callmemaybe)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CallMeMaybe-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3542)
 
 CallMeMaybe
