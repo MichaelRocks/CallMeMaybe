@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.michaelrocks.callme;
+package io.michaelrocks.callmemaybe;
 
 import android.text.Selection;
 import android.text.SpannableStringBuilder;

@@ -25,7 +25,7 @@
   android:paddingRight="@dimen/activity_horizontal_margin"
   android:paddingTop="@dimen/activity_vertical_margin"
   android:orientation="vertical"
-  tools:context="io.michaelrocks.callme.sample.MainActivity">
+  tools:context="io.michaelrocks.callmemaybe.sample.MainActivity">
 
   <android.support.design.widget.TextInputLayout
     android:layout_width="match_parent"
@@ -40,7 +40,7 @@
 
   </android.support.design.widget.TextInputLayout>
 
-  <io.michaelrocks.callme.PhoneEditText
+  <io.michaelrocks.callmemaybe.PhoneEditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="@string/another_phone_hint"

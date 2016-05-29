@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.michaelrocks.callme;
+package io.michaelrocks.callmemaybe;
 
 class CodePoint {
   private static final char[] chars = new char[] { 0, 0 };

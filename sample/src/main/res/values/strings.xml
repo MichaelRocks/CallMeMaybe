@@ -15,7 +15,7 @@
   -->
 
 <resources>
-  <string name="app_name">CallMe</string>
+  <string name="app_name">CallMeMaybe</string>
   <string name="phone_hint">Phone number</string>
   <string name="another_phone_hint">Another phone number</string>
 </resources>

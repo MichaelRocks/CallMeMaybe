@@ -21,7 +21,7 @@ android {
   buildToolsVersion '23.0.0'
 
   defaultConfig {
-    applicationId 'io.michaelrocks.callme.sample'
+    applicationId 'io.michaelrocks.callmemaybe.sample'
     minSdkVersion 7
     targetSdkVersion 23
     versionCode 1

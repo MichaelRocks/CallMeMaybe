@@ -17,7 +17,7 @@
 
 <manifest
   xmlns:android="http://schemas.android.com/apk/res/android"
-  package="io.michaelrocks.callme.sample">
+  package="io.michaelrocks.callmemaybe.sample">
 
   <application
     android:allowBackup="true"
@@ -26,7 +26,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme">
 
-    <activity android:name="io.michaelrocks.callme.sample.MainActivity">
+    <activity android:name="io.michaelrocks.callmemaybe.sample.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -1,1 +1,3 @@
+rootProject.name = 'callmemaybe'
+
 include ':library', ':sample'

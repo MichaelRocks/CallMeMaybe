@@ -56,7 +56,7 @@ dependencies {
 }
 
 publishing {
-  def artifactName = 'callme'
+  def artifactName = 'callmemaybe'
 
   android.libraryVariants.all { variant ->
     project.tasks.create("bintrayUpload${variant.name.capitalize()}", BintrayUploadTask) {

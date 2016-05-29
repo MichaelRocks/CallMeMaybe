@@ -14,24 +14,21 @@
  * limitations under the License.
  */
 
-package io.michaelrocks.callme;
+package io.michaelrocks.callmemaybe.sample;
 
-import android.text.Editable;
-import android.view.inputmethod.EditorInfo;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class CallMe {
-  private CallMe() {
-    // Nothing to do.
-  }
+import io.michaelrocks.callmemaybe.CallMeMaybe;
 
-  public static void attachTo(final TextView textView) {
-    textView.setInputType(EditorInfo.TYPE_CLASS_PHONE);
-    textView.setEditableFactory(new Editable.Factory() {
-      @Override
-      public Editable newEditable(final CharSequence source) {
-        return new PhoneStringBuilder(source);
-      }
-    });
+public class MainActivity extends AppCompatActivity {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.main_activity);
+
+    final TextView phoneEditText = (TextView) findViewById(R.id.phoneEditText);
+    CallMeMaybe.attachTo(phoneEditText);
   }
 }

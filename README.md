@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.org/MichaelRocks/callme.svg?branch=master)](https://travis-ci.org/MichaelRocks/callme)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CallMe-green.svg?style=true)](https://android-arsenal.com/details/1/3542)
+[![Build Status](https://travis-ci.org/MichaelRocks/callmemaybe.svg?branch=master)](https://travis-ci.org/MichaelRocks/callmemaybe)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CallMeMaybe-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3542)
 
-CallMe
-======
+CallMeMaybe
+===========
 An Android `EditText` for phone numbers.
 
-![CallMe](https://raw.githubusercontent.com/MichaelRocks/callme/master/callme.gif)
+![CallMeMaybe](https://raw.githubusercontent.com/MichaelRocks/CallMeMaybe/master/callmemaybe.gif)
 
 Download
 --------
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-  compile 'io.michaelrocks:callme:1.1.0'
+  compile 'io.michaelrocks:callmemaybe:1.2.0'
 }
 ```
 
@@ -28,7 +28,7 @@ If using the `PhoneEditText` view doesn't work wll for you it's possible
 to make `TextView` act as the `PhoneEditText`.
 ```java
 final TextView phoneEditText = (TextView) findViewById(R.id.phoneEditText);
-CallMe.attachTo(phoneEditText);
+CallMeMaybe.attachTo(phoneEditText);
 ```
 
 License

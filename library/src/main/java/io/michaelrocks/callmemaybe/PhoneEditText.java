@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.michaelrocks.callme;
+package io.michaelrocks.callmemaybe;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -41,6 +41,6 @@ public class PhoneEditText extends EditText {
   }
 
   {
-    CallMe.attachTo(this);
+    CallMeMaybe.attachTo(this);
   }
 }
