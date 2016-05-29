@@ -27,10 +27,6 @@ class PhoneFormatter {
   private final SpannableStringBuilder buffer = new SpannableStringBuilder();
   private final MutableAsYouTypeFormatter asYouTypeFormatter;
 
-  public PhoneFormatter(final PhoneNumberUtil phoneNumberUtil) {
-    this(new MutableAsYouTypeFormatter(phoneNumberUtil), FormatParameters.DEFAULT);
-  }
-
   public PhoneFormatter(final PhoneNumberUtil phoneNumberUtil, final FormatParameters parameters) {
     this(new MutableAsYouTypeFormatter(phoneNumberUtil), parameters);
   }
