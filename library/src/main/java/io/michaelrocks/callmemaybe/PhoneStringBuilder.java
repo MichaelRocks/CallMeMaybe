@@ -19,11 +19,13 @@ package io.michaelrocks.callmemaybe;
 import android.text.Selection;
 import android.text.SpannableStringBuilder;
 
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
+
 class PhoneStringBuilder extends SpannableStringBuilder {
   private final PhoneFormatter phoneFormatter;
 
-  public PhoneStringBuilder(final CharSequence source) {
-    this(source, new PhoneFormatter());
+  public PhoneStringBuilder(final PhoneNumberUtil phoneNumberUtil, final CharSequence source) {
+    this(source, new PhoneFormatter(phoneNumberUtil));
   }
 
   public PhoneStringBuilder(final CharSequence text, final PhoneFormatter phoneFormatter) {

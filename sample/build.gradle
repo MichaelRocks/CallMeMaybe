@@ -22,7 +22,7 @@ android {
 
   defaultConfig {
     applicationId 'io.michaelrocks.callmemaybe.sample'
-    minSdkVersion 7
+    minSdkVersion 8
     targetSdkVersion 23
     versionCode 1
     versionName '1.2.0'

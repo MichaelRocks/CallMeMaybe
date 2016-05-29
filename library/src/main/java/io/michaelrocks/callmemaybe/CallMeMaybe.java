@@ -16,22 +16,42 @@
 
 package io.michaelrocks.callmemaybe;
 
+import android.content.Context;
 import android.text.Editable;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
+
 public class CallMeMaybe {
+  private static PhoneNumberUtil phoneNumberUtil;
+
   private CallMeMaybe() {
     // Nothing to do.
   }
 
+  public static PhoneNumberUtil getPhoneNumberUtil() {
+    return phoneNumberUtil;
+  }
+
+  public static void setPhoneNumberUtil(final PhoneNumberUtil phoneNumberUtil) {
+    CallMeMaybe.phoneNumberUtil = phoneNumberUtil;
+  }
+
   public static void attachTo(final TextView textView) {
+    ensurePhoneNumberUtil(textView.getContext());
     textView.setInputType(EditorInfo.TYPE_CLASS_PHONE);
     textView.setEditableFactory(new Editable.Factory() {
       @Override
       public Editable newEditable(final CharSequence source) {
-        return new PhoneStringBuilder(source);
+        return new PhoneStringBuilder(phoneNumberUtil, source);
       }
     });
+  }
+
+  private static void ensurePhoneNumberUtil(final Context context) {
+    if (phoneNumberUtil == null) {
+      phoneNumberUtil = PhoneNumberUtil.createInstance(context);
+    }
   }
 }

@@ -16,14 +16,10 @@
 
 package io.michaelrocks.callmemaybe;
 
-import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 
 class AsYouTypeFormatter {
-  private com.google.i18n.phonenumbers.AsYouTypeFormatter formatter;
-
-  public AsYouTypeFormatter() {
-    this(PhoneNumberUtil.getInstance());
-  }
+  private io.michaelrocks.libphonenumber.android.AsYouTypeFormatter formatter;
 
   public AsYouTypeFormatter(final PhoneNumberUtil phoneNumberUtil) {
     formatter = phoneNumberUtil.getAsYouTypeFormatter("US");

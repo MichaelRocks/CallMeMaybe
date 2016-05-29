@@ -34,7 +34,7 @@ android {
   buildToolsVersion '23.0.0'
 
   defaultConfig {
-    minSdkVersion 4
+    minSdkVersion 8
     targetSdkVersion 23
     versionCode 1
     versionName project.version
@@ -52,7 +52,7 @@ android {
 }
 
 dependencies {
-  compile 'com.googlecode.libphonenumber:libphonenumber:7.3.0'
+  compile 'io.michaelrocks:libphonenumber-android:7.4.1-1'
 }
 
 publishing {

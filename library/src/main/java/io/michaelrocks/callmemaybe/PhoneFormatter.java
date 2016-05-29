@@ -21,12 +21,14 @@ import android.text.Selection;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 
+import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
+
 class PhoneFormatter {
   private final SpannableStringBuilder buffer = new SpannableStringBuilder();
   private final AsYouTypeFormatter asYouTypeFormatter;
 
-  public PhoneFormatter() {
-    this(new AsYouTypeFormatter());
+  public PhoneFormatter(final PhoneNumberUtil phoneNumberUtil) {
+    this(new AsYouTypeFormatter(phoneNumberUtil));
   }
 
   public PhoneFormatter(final AsYouTypeFormatter asYouTypeFormatter) {
