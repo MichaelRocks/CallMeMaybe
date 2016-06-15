@@ -52,7 +52,7 @@ android {
 }
 
 dependencies {
-  compile 'io.michaelrocks:libphonenumber-android:7.4.2'
+  compile 'io.michaelrocks:libphonenumber-android:7.4.3'
 }
 
 publishing {
