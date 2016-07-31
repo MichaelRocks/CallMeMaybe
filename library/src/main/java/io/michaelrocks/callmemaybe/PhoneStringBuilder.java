@@ -51,7 +51,7 @@ class PhoneStringBuilder extends SpannableStringBuilder {
     final CharSequence phoneNumber = phoneFormatter.getFormattedPhone();
     final SpannableStringBuilder result = super.replace(0, length(), phoneNumber, 0, phoneNumber.length());
     final int selection = phoneFormatter.getSelection();
-    if (selection != -1) {
+    if (selection != -1 && selection <= result.length()) {
       Selection.setSelection(result, selection);
     }
     return result;
