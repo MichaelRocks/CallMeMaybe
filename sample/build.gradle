@@ -17,21 +17,17 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 25
-  buildToolsVersion '25.0.2'
+  compileSdkVersion projectCompileSdkVersion
+  buildToolsVersion projectBuildToolsVersion
 
   defaultConfig {
-    applicationId 'io.michaelrocks.callmemaybe.sample'
-    minSdkVersion 9
-    targetSdkVersion 25
-    versionCode 1
-    versionName '1.2.8'
-  }
+    minSdkVersion projectMinSdkVersion
+    targetSdkVersion projectTargetSdkVersion
 
-  buildTypes {
-    release {
-      minifyEnabled false
-    }
+    applicationId 'io.michaelrocks.callmemaybe.sample'
+
+    versionCode 1
+    versionName rootProject.version
   }
 
   lintOptions {
@@ -40,7 +36,7 @@ android {
 }
 
 dependencies {
-  compile project(':library')
-  compile 'com.android.support:appcompat-v7:25.2.0'
-  compile 'com.android.support:design:25.2.0'
+  implementation project(':library')
+  implementation "com.android.support:appcompat-v7:$androidSupportVersion"
+  implementation "com.android.support:design:$androidSupportVersion"
 }

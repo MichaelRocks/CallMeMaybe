@@ -15,17 +15,34 @@
  */
 
 buildscript {
+  group = 'io.michaelrocks'
+  version = '1.2.9'
+
+  ext.projectCompileSdkVersion = 27
+  ext.projectBuildToolsVersion = '27.0.3'
+  ext.projectMinSdkVersion = 14
+  ext.projectTargetSdkVersion = 27
+
+  ext.androidToolsVersion = '3.1.2'
+  ext.bintrayVersion = '1.8.0'
+
+  ext.androidSupportVersion = '27.1.1'
+  ext.libphonenumberVersion = '8.9.5'
+
   repositories {
+    google()
     jcenter()
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.2.3'
+    classpath "com.android.tools.build:gradle:$androidToolsVersion"
+    classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$bintrayVersion"
   }
 }
 
 allprojects {
   repositories {
+    google()
     jcenter()
   }
 }
