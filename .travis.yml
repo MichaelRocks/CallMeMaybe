@@ -5,10 +5,8 @@ android:
     - tools
     - tools
     - platform-tools
-    - build-tools-25.0.2
-    - android-25
-    - extra
-    - extra-android-m2repository
+    - build-tools-27.0.3
+    - android-27
 
 jdk:
   - oraclejdk8
@@ -18,3 +16,6 @@ sudo: false
 cache:
   directories:
     - $HOME/.m2
+
+before_install:
+  - yes | sdkmanager "platforms;android-27"
