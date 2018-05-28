@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-  compile 'io.michaelrocks:callmemaybe:1.2.9'
+  compile 'io.michaelrocks:CallMeMaybe:1.2.9'
 }
 ```
 
